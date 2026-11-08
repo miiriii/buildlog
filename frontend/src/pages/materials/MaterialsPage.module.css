@@ -1,0 +1,85 @@
+.materials { min-height: 100dvh; display: grid; grid-template-columns: 224px minmax(0, 1fr); background: #f5f6f8; color: #191f28; font-family: 'Noto Sans KR', sans-serif; font-size: 14px; }
+.materials button, .materials input, .materials textarea { font: inherit; }
+.materials button { border: 0; cursor: pointer; }
+.materials button:disabled { cursor: not-allowed; }
+.materials :focus-visible { outline: 3px solid #3182f6; outline-offset: 3px; }
+.sidebar { background: white; padding: 28px 24px; display: flex; flex-direction: column; min-width: 0; }
+.brand { color: #3182f6; font-size: 26px; font-weight: 800; text-decoration: none; display: flex; align-items: center; gap: 12px; }
+.workspace { font-size: 10px; color: #6b7684; margin: 30px 0 22px; }
+.nav { display: flex; flex-direction: column; gap: 22px; }
+.nav a, .nav button { padding: 14px 12px; border-radius: 12px; text-decoration: none; color: #6b7684; text-align: left; font-size: 14px; background: transparent; }
+.nav .selected { background: #eaf3ff; color: #3182f6; font-weight: 700; }
+.workspaceNote { border-radius: 16px; background: #f5f6f8; padding: 18px 14px; margin-top: 30px; font-size: 12px; }
+.workspaceNote p { color: #6b7684; line-height: 1.7; margin: 10px 0; }
+.workspaceNote small { font-size: 10px; color: #6b7684; }
+.account { margin-top: auto; padding-top: 50px; text-decoration: none; color: #6b7684; font-size: 12px; overflow-wrap: anywhere; }
+.main { min-width: 0; padding: 40px; }
+.heading { margin-bottom: 28px; }
+.heading > p { color: #3182f6; font-size: 10px; font-weight: 700; margin: 0 0 12px; }
+.heading h1 { font-size: 32px; line-height: 1.4; letter-spacing: -.04em; margin: 0 0 12px; }
+.heading > span { color: #6b7684; line-height: 1.7; }
+.columns { display: grid; grid-template-columns: minmax(320px, 400px) minmax(0, 1fr); gap: 24px; align-items: start; }
+.materials h2 { font-size: 20px; font-weight: 700; margin: 0; letter-spacing: -.03em; }
+.registration { background: white; border-radius: 24px; padding: 28px; }
+.description { color: #6b7684; font-size: 12px; margin: 20px 0; }
+.registration label { display: block; font-size: 12px; font-weight: 700; margin: 24px 0 10px; }
+.registration input, .registration textarea { width: 100%; min-width: 0; border: 1px solid transparent; background: #f5f6f8; color: #191f28; border-radius: 12px; padding: 16px 14px; font-size: 12px; }
+.registration input::placeholder, .registration textarea::placeholder { color: #6b7684; }
+.registration textarea { resize: vertical; min-height: 70px; }
+.fileArea { background: #eaf3ff; border-radius: 18px; margin-top: 22px; padding: 24px 10px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.uploadIcon { color: #3182f6; font-size: 36px; line-height: 1; }
+.fileArea strong { font-size: 13px; }
+.fileArea > span:not(.uploadIcon) { font-size: 10px; color: #6b7684; }
+.materials .primary { color: white; background: #3182f6; border-radius: 12px; padding: 11px 32px; font-size: 13px; font-weight: 700; }
+.materials .primary:disabled { background: #8dbbff; }
+.hint { font-size: 10px; color: #6b7684; line-height: 1.9; margin: 16px 0 0; }
+.materials .upload { width: 100%; margin-top: 16px; padding: 16px; }
+.library { min-width: 0; }
+.library h2 span { color: #3182f6; margin-left: 12px; }
+.exampleLabel, .actionNotice { font-size: 11px; color: #6b7684; line-height: 1.8; }
+.filters { display: flex; gap: 10px; margin: 20px 0 18px; }
+.filters button { border-radius: 24px; background: white; color: #6b7684; font-size: 12px; min-width: 90px; padding: 10px 18px; }
+.filters button[aria-pressed='true'] { color: white; background: #191f28; }
+.cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+.card { display: flex; align-items: center; gap: 20px; padding: 18px; background: white; border-radius: 22px; min-width: 0; }
+.preview { width: 144px; height: 102px; flex-shrink: 0; border-radius: 12px; background: #eaf3ff; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; color: #3182f6; }
+.preview strong { font-size: 24px; }
+.preview span { font-size: 10px; color: #6b7684; }
+.video { background: #191f28; color: white; }
+.video span { color: white; }
+.cardBody { min-width: 0; }
+.cardBody { flex: 1; }
+.summary { margin-top: 16px; padding: 14px; border-radius: 12px; background: #f5f8ff; overflow-wrap: anywhere; }
+.summary > strong { color: #3182f6; font-size: 12px; }
+.summary .summaryText { white-space: pre-wrap; font-size: 13px; color: #333d4b; line-height: 1.9; }
+.summary small { display: block; font-size: 10px; color: #6b7684; line-height: 1.7; }
+.summary button { background: #eaf3ff; color: #2367c7; padding: 8px 12px; border-radius: 8px; margin-top: 8px; }
+.cardBody h3 { margin: 0 0 9px; font-size: 16px; line-height: 1.5; overflow-wrap: anywhere; }
+.cardBody p { font-size: 11px; margin: 5px 0; color: #6b7684; line-height: 1.6; }
+.filename { overflow-wrap: anywhere; }
+.memo { white-space: pre-wrap; overflow-wrap: anywhere; }
+.success { color: #196c42; font-size: 13px; line-height: 1.8; }
+.libraryHeader, .originalHeader { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.libraryHeader button, .originalHeader button { background: white; border: 1px solid #e4e7ec; padding: 8px 12px; border-radius: 10px; font-size: 11px; color: #3182f6; }
+.empty { background: white; padding: 28px 20px; border-radius: 18px; line-height: 1.8; color: #6b7684; }
+.original { background: white; padding: 24px; margin-bottom: 24px; border-radius: 24px; min-width: 0; overflow-wrap: anywhere; }
+.original img, .original video { display: block; max-width: 100%; max-height: 65vh; margin: 20px auto; }
+.original a { color: #3182f6; font-size: 13px; }
+.fieldHint { font-size: 10px; color: #6b7684; margin: 6px 0 0; }
+.fieldError { color: #b42318; font-size: 11px; line-height: 1.8; margin: 6px 0 0; overflow-wrap: anywhere; }
+.fieldError:empty { display: none; }
+.registration [aria-invalid='true'] { border-color: #d92d20; }
+.selection { background: #f5f6f8; border-radius: 12px; padding: 14px; margin-top: 14px; font-size: 11px; line-height: 1.8; overflow-wrap: anywhere; }
+.selection p { margin: 6px 0 0; color: #6b7684; }
+.cardActions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 10px; color: #6b7684; font-size: 10px; }
+.cardActions button { background: transparent; color: #6b7684; font-size: 10px; padding: 3px 0; }
+.encouragement { padding: 20px 16px; border-radius: 16px; color: #3182f6; background: #eaf3ff; font-size: 12px; line-height: 1.8; }
+.ai { background: white; border-radius: 24px; padding: 28px 24px; margin-top: 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.ai h2 { font-size: 16px; }
+.ai p { color: #6b7684; font-size: 13px; line-height: 1.8; margin: 10px 0 6px; }
+.ai small { color: #6b7684; font-size: 10px; line-height: 1.8; }
+.ai button { flex-shrink: 0; background: #99c2ff; border-radius: 12px; color: white; padding: 16px 40px; font-size: 12px; font-weight: 700; }
+.footer { border: 0; padding: 28px 0 0; font-size: 10px; color: #6b7684; line-height: 1.8; }
+@media (max-width: 1150px) { .main { padding: 32px 24px; } .columns { grid-template-columns: minmax(280px, .85fr) minmax(0, 1fr); } .card { gap: 12px; padding: 14px; } .preview { width: 100px; } }
+@media (max-width: 950px) { .columns { grid-template-columns: minmax(0, 1fr); } .ai { align-items: flex-start; flex-direction: column; } }
+@media (max-width: 600px) { .materials { grid-template-columns: minmax(0, 1fr); } .sidebar { padding: 20px; gap: 16px; } .brand { font-size: 23px; } .workspace, .workspaceNote { display: none; } .nav { flex-direction: row; flex-wrap: wrap; gap: 6px; } .nav a, .nav button { font-size: 12px; padding: 10px; } .account { margin: 0; padding: 0; } .main { padding: 28px 20px; } .heading h1 { font-size: 28px; } .heading > span { font-size: 12px; } .registration { padding: 24px; } .filters { gap: 8px; } .filters button { min-width: 0; flex: 1; padding: 10px; } .card { align-items: flex-start; gap: 12px; } .preview { width: 78px; height: 88px; } .preview strong { font-size: 19px; } .preview span { font-size: 8px; } .cardBody h3 { font-size: 14px; } .cardActions { gap: 8px; } .ai { padding: 24px; } .ai button { width: 100%; padding: 16px 10px; } }

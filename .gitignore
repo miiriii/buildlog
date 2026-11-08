@@ -25,3 +25,6 @@ coverage/
 # Logs
 *.log
 logs/
+
+# Private learning materials and staging files
+backend/uploads/
